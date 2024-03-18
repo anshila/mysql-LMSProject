@@ -2,7 +2,7 @@ README.md
 
 # Library Management System
 
-The Library Management System is a software application designed to help libraries efficiently manage their operations, including book management, customer management, and issue tracking. This project provides a database schema and SQL queries to demonstrate the functionality of the system.
+The Library Management System help libraries efficiently manage their operations, including book management, customer management, and issue tracking. This project provides a database schema and SQL queries to demonstrate the functionality of the system.
 
 ## Database Schema
 
@@ -28,7 +28,7 @@ The project includes various SQL queries to perform operations such as retrievin
 7.Display the branch numbers and the total count of employees in each branch.
 8.Display the names of customers who have issued books in the month of June 2023.
 9.Retrieve book titles from the book table containing history.
-10.Retrieve the branch numbers along with the count of employees for branches having more than 5 employees.
+10.Retrieve the branch numbers along with the count of employees for branches having more than 2 employees.
 
 ## Conclusion
 
