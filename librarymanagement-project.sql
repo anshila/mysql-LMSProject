@@ -114,7 +114,6 @@ INSERT INTO ReturnStatus (Return_Id, Return_cust, Return_date, Return_book_name,
 (704, 304, '2024-06-30', 'The Secret', 'ISBN-0143127550'),
 (705, 305, '2024-07-05', 'The Game of Thrones', 'ISBN-0143039433');
 
-
 # Display all the tables and Write the queries for the following :
 select * from Branch;
 select * from Employee;
@@ -140,10 +139,10 @@ join Customer c on i.Issued_cust = c.Customer_Id;
 #4. Display the total count of books in each category.
 select Category, COUNT(*) as Total_Count from Books group by Category;
 
-#5. Retrieve the employee names and their positions for the employees whose salaries are above Rs.40,000.
+#5. Retrieve the employee names and their positions for the employees whose salaries are above Rs.50,000.
 select emp_name,position,salary from employee where salary > 50000;
 
-#6. List the customer names who registered before 2022-01-01 and have not issued any books yet.
+#6. List the customer names who registered before 2023-01-01 and have not issued any books yet.
 select Customer_name
 from Customer
 where Reg_date < '2023-01-01'
@@ -163,7 +162,7 @@ from Employee
 group by Branch_no;
 
 #8. Display the names of customers who have issued books in the month of June 2023.
-select distinct c.Customer_name
+select distinct c.Customer_name,i.Issue_date
 from Customer c
 join IssueStatus i on c.Customer_Id = i.Issued_cust
 where year(i.Issue_date) = 2024 and month(i.Issue_date) = 6;
